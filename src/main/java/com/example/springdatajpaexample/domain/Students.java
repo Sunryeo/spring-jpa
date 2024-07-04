@@ -8,6 +8,12 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor
 public class Students {
+    public Students(String name, int age, String address) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
